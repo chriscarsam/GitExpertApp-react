@@ -30,8 +30,9 @@ export const GifGrid = ({ category }) => {
     // getGifs();
 
     return (
-        <div>
-            <h3>{ category }</h3>          
+        <>
+        <h3>{ category }</h3>          
+        <div className="card-grid">
              
                  {
                      images.map( img => (
@@ -43,5 +44,6 @@ export const GifGrid = ({ category }) => {
                  }
              
         </div>
+        </>
     )
 }
